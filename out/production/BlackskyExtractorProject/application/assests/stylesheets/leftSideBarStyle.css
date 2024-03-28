@@ -1,0 +1,14 @@
+#leftSideBar {
+    /*-fx-background-color: #7D00FF;*/
+    -fx-background-color: linear-gradient(to bottom left,#8300EE,#2C0082);
+    -fx-background-radius: 0 30 0 30;
+    -fx-border-style: none;
+}
+
+.leftSideComponents:hover {
+    -fx-background-color: #2E006F;
+}
+
+.blue-dark-background {
+    -fx-background-color: #2E006F;
+}

@@ -1,0 +1,132 @@
+.mainViewStyle {
+    -fx-background-color: white;
+    -fx-background-radius: 30 30 30 30;
+    -fx-border-radius: 30px;
+    -fx-border-width: 2px;
+    -fx-border-color: linear-gradient(to bottom left,#FF00F7,#006BFF);
+}
+.combo-box .cell {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+.combo-box .cell:hover {
+    -fx-background-color: linear-gradient(to bottom left,#FF00F7,#006BFF);
+    -fx-text-fill: white;
+}
+
+.extractButtonStyle {
+    -fx-background-color: linear-gradient(to bottom left,#FF00F7,#006BFF);
+}
+.chooseButtonStyle {
+    -fx-background-color: linear-gradient(to bottom left,#FF00F7,#006BFF);
+}
+.destPathStyle {
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+    -fx-border-color: #dfdfdf;
+    -fx-cursor: default;
+}
+
+.hand-cursor-style {
+    -fx-cursor: hand;
+}
+
+
+.blacksky-progress-bar {
+    -fx-pref-height: 5;
+}
+.blacksky-progress-bar > .track {
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+}
+
+.progress-bar-red  > .bar {
+    -fx-background-color: linear-gradient(to bottom left,#FF0000,#006BFF);
+}
+
+.progress-bar-pink > .bar {
+    -fx-background-color: linear-gradient(to bottom left,#FF00F7,#006BFF);
+}
+
+.progress-bar-blue > .bar {
+    -fx-background-color: #006BFF;
+}
+
+.extraction-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 13;
+}
+.extraction-title-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+}
+.extraction-child-boxes {
+    -fx-pref-width: 300;
+    -fx-pref-height: 120;
+    -fx-padding: 10 20 10 20;
+    -fx-spacing: 8;
+    -fx-alignment: center-left;
+    -fx-border-radius: 20;
+    -fx-border-width: 1;
+    -fx-border-color: linear-gradient(to bottom left,#006BFF,#FF00F7);
+}
+
+.extraction-child-hboxes {
+    -fx-spacing: 10;
+    -fx-alignment: center;
+}
+
+.addUserPaneStyle {
+    -fx-border-radius: 20px;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-border-color: linear-gradient(to bottom left,#006BFF,#FF00F7);
+}
+
+.addUserFieldStyles {
+    -fx-text-fill: linear-gradient(to bottom left,#006BFF,#FF00F7);
+    -fx-prompt-text-fill: linear-gradient(to bottom left,#006BFF,#FF00F7);
+}
+.addUserButtonStyle {
+    -fx-background-color: linear-gradient(to bottom left,#006BFF,#FF00F7);
+}
+
+.box1 {
+    -fx-background-color: #8000FF;
+}
+.box2 {
+    -fx-background-color: #00A4FF;
+}
+.box3 {
+    -fx-background-color: linear-gradient(to bottom left,#8000FF,#00A4FF);
+}
+.boxes {
+    -fx-background-radius: 5px;
+}
+.boxImage {
+    -fx-padding: 0 30px 0 0;
+    -fx-border-color: white;
+    -fx-border-width: 0 2 0 0;
+}
+.boxIcon {
+    -fx-border-style: solid;
+    -fx-border-color: white;
+}
+
+.userinfoFields {
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: white;
+    -fx-highlight-fill: white;
+    -fx-highlight-text-fill: black;
+}
+.changeInfoButton {
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-border-radius: 3px;
+}
+
+.changeInfoButton:hover {
+    -fx-background-color: white;
+    -fx-text-fill: linear-gradient(to bottom left,#8000FF,#00A4FF);
+    -fx-cursor: hand;
+}

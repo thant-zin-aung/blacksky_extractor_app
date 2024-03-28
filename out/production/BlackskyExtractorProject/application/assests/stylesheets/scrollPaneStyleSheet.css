@@ -1,0 +1,28 @@
+.scrollPaneStyle {
+    -fx-background-color: transparent;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #C1C1C1;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #BAB6B6;
+    -fx-background-radius: 0;
+}
+.scroll-bar:vertical .track {
+    -fx-background-color: white;
+    -fx-font-size: 2px;
+}
+
+.scroll-bar:vertical .decrement-button
+,.scroll-bar:vertical .increment-button{
+    -fx-background-radius: 0em;
+    -fx-background-color: transparent;
+    -fx-padding: 0 7 0 0;
+
+}
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow {
+    -fx-padding: -1;
+    -fx-background-radius: 0;
+}

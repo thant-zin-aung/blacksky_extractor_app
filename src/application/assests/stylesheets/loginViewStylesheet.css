@@ -1,0 +1,18 @@
+.loginViewStyle {
+	-fx-background-color: #B600FF;
+	-fx-background-radius: 30px;
+}
+.loginRightStyle {
+	-fx-background-color: white;
+	-fx-background-radius: 0 30 30 0;
+}
+.goWebsiteButtonStyle {
+	-fx-background-color: white;
+	-fx-text-fill: #B600FF;
+	-fx-background-radius: 20px;
+}
+.signInButtonStyle {
+	-fx-text-fill: white;
+	-fx-background-radius: 20px;
+	-fx-background-color: #B600FF;
+}

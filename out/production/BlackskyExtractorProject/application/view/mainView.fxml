@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" styleClass="mainViewStyle" stylesheets="@../assests/stylesheets/mainViewStyleSheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="-2.0" prefHeight="75.0" prefWidth="1372.0" spacing="20.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BLACKSKY extractor" wrappingWidth="180.0">
+               <font>
+                  <Font name="Ebrima Bold" size="20.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.4885496110406541" focusDistance="-0.41121509587653327" radius="0.6962617178943671">
+                     <stops>
+                        <Stop color="#ff00ef" />
+                        <Stop color="#ff00ef" offset="0.007633587786259542" />
+                        <Stop color="#0400f8" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <Pane prefHeight="55.0" prefWidth="1053.0" />
+            <ImageView fx:id="exitButton" fitHeight="40.0" fitWidth="40.0" onMouseEntered="#mouseEnterToLeftSideComponent" onMouseExited="#mouseExitToLeftSideComponent" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/photos/exit.png" />
+               </image>
+               <effect>
+                  <DropShadow color="#00a6ff" />
+               </effect>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+      <VBox fx:id="leftSideBar" alignment="CENTER" layoutX="4.0" layoutY="103.0" prefHeight="666.0" prefWidth="155.0" spacing="10.0" styleClass="leftSideBarStyle" stylesheets="@../assests/stylesheets/leftSideBarStyle.css" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="101.0">
+         <children>
+            <VBox fx:id="leftSideComponents1" alignment="CENTER" onMouseClicked="#clickOnLeftSideComponent" onMouseEntered="#mouseEnterToLeftSideComponent" onMouseExited="#mouseExitToLeftSideComponent" prefHeight="100.0" prefWidth="160.0" spacing="5.0" styleClass="leftSideComponents" stylesheets="@../assests/stylesheets/leftSideBarStyle.css">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/photos/extract.png" />
+                     </image>
+                     <effect>
+                        <DropShadow color="#00ff62" />
+                     </effect>
+                  </ImageView>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Extract">
+                     <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox fx:id="leftSideComponents2" alignment="CENTER" onMouseClicked="#clickOnLeftSideComponent" onMouseEntered="#mouseEnterToLeftSideComponent" onMouseExited="#mouseExitToLeftSideComponent" prefHeight="100.0" prefWidth="100.0" spacing="5.0" styleClass="leftSideComponents" stylesheets="@../assests/stylesheets/leftSideBarStyle.css">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/photos/compress.png" />
+                     </image>
+                     <effect>
+                        <DropShadow color="#006dff" />
+                     </effect>
+                  </ImageView>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Compress">
+                     <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                     </font>
+                  </Text>
+               </children></VBox>
+            <VBox fx:id="leftSideComponents3" alignment="CENTER" onMouseClicked="#clickOnLeftSideComponent" onMouseEntered="#mouseEnterToLeftSideComponent" onMouseExited="#mouseExitToLeftSideComponent" prefHeight="100.0" prefWidth="100.0" spacing="5.0" styleClass="leftSideComponents" stylesheets="@../assests/stylesheets/leftSideBarStyle.css">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/photos/add_user.png" />
+                     </image>
+                     <effect>
+                        <DropShadow color="#00ffa8" />
+                     </effect>
+                  </ImageView>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Add User">
+                     <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox fx:id="leftSideComponents4" alignment="CENTER" onMouseClicked="#clickOnLeftSideComponent" onMouseEntered="#mouseEnterToLeftSideComponent" onMouseExited="#mouseExitToLeftSideComponent" prefHeight="100.0" prefWidth="100.0" spacing="5.0" styleClass="leftSideComponents" stylesheets="@../assests/stylesheets/leftSideBarStyle.css">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/photos/remove_user.png" />
+                     </image>
+                     <effect>
+                        <DropShadow color="#590000" />
+                     </effect></ImageView>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove User">
+                     <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox fx:id="leftSideComponents5" alignment="CENTER" onMouseClicked="#clickOnLeftSideComponent" onMouseEntered="#mouseEnterToLeftSideComponent" onMouseExited="#mouseExitToLeftSideComponent" prefHeight="100.0" prefWidth="100.0" spacing="5.0" styleClass="leftSideComponents" stylesheets="@../assests/stylesheets/leftSideBarStyle.css">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/photos/user_info.png" />
+                     </image>
+                     <effect>
+                        <DropShadow color="#bababa" />
+                     </effect>
+                  </ImageView>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Change User Info">
+                     <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <ScrollPane fx:id="scrollPane" fitToWidth="true" layoutX="191.0" layoutY="83.0" prefHeight="620.0" prefWidth="1128.0" styleClass="scrollPaneStyle" stylesheets="@../assests/stylesheets/scrollPaneStyleSheet.css" visible="false" AnchorPane.bottomAnchor="66.0" AnchorPane.leftAnchor="191.0" AnchorPane.rightAnchor="47.0" AnchorPane.topAnchor="83.0" />
+      <JFXButton fx:id="extractButton" disable="true" layoutX="191.0" layoutY="717.0" onMouseClicked="#clickOnButtons" prefHeight="40.0" prefWidth="114.0" text="Extract" textFill="WHITE" AnchorPane.bottomAnchor="11.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+         <styleClass>
+            <String fx:value="extractButtonStyle" />
+            <String fx:value="hand-cursor-style" />
+         </styleClass>
+      </JFXButton>
+      <Label fx:id="selectionLabel" layoutX="1154.0" layoutY="723.0" prefHeight="22.0" prefWidth="162.0" text="Selected" AnchorPane.bottomAnchor="22.600000000000023" AnchorPane.leftAnchor="1154.0">
+         <font>
+            <Font name="Calibri Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="sortBox" layoutX="973.0" layoutY="716.0" onAction="#clickOnSortBox" prefHeight="26.0" prefWidth="155.0" AnchorPane.bottomAnchor="25.600000000000023" AnchorPane.leftAnchor="973.0" />
+      <JFXButton fx:id="choosePathButton" layoutX="348.0" layoutY="720.0" onMouseClicked="#clickOnButtons" prefHeight="28.0" prefWidth="103.0" text="Choose Path" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+         <styleClass>
+            <String fx:value="chooseButtonStyle" />
+            <String fx:value="hand-cursor-style" />
+         </styleClass>
+      </JFXButton>
+      <JFXTextField fx:id="destFolderPath" editable="false" focusColor="WHITE" layoutX="468.0" layoutY="716.0" prefHeight="26.0" prefWidth="439.0" styleClass="destPathStyle" unFocusColor="WHITE">
+         <effect>
+            <DropShadow color="#dfdfdf" />
+         </effect>
+      </JFXTextField>
+      <AnchorPane fx:id="compressPane" layoutX="213.0" layoutY="119.0" prefHeight="610.0" prefWidth="1091.0" styleClass="compressBox" stylesheets="@../assests/stylesheets/CompressBoxStylesheet.css" visible="false" AnchorPane.bottomAnchor="38.60000000000002" AnchorPane.leftAnchor="213.0" AnchorPane.rightAnchor="61.799999999999955" AnchorPane.topAnchor="119.0">
+         <children>
+            <Text layoutX="50.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compress" wrappingWidth="218.40347290039062">
+               <font>
+                  <Font name="Yu Gothic Bold" size="36.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#010eff" />
+                        <Stop color="#d900ff" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <HBox alignment="CENTER" layoutX="197.0" layoutY="139.0" prefHeight="66.0" prefWidth="714.0" spacing="40.0" AnchorPane.bottomAnchor="393.0" AnchorPane.leftAnchor="197.0" AnchorPane.rightAnchor="167.80000000000007" AnchorPane.topAnchor="139.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="7z Password  ">
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <JFXPasswordField fx:id="compressSzPassword" focusColor="WHITE" onKeyPressed="#keyPressOnCompressPasswordFields" prefHeight="26.0" prefWidth="450.0" styleClass="passwordBox">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXPasswordField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="197.0" layoutY="233.0" prefHeight="66.0" prefWidth="714.0" spacing="40.0" AnchorPane.bottomAnchor="299.0" AnchorPane.leftAnchor="197.0" AnchorPane.rightAnchor="167.80000000000007" AnchorPane.topAnchor="233.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rar Password">
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <JFXPasswordField fx:id="compressRarPassword" focusColor="WHITE" onKeyPressed="#keyPressOnCompressPasswordFields" prefHeight="26.0" prefWidth="450.0" styleClass="passwordBox">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXPasswordField>
+               </children>
+            </HBox>
+            <JFXButton fx:id="compressButton" layoutX="413.0" layoutY="419.0" onAction="#clickOnCompressButton" prefHeight="50.0" prefWidth="150.0" styleClass="compressButtonStyle" stylesheets="@../assests/stylesheets/CompressBoxStylesheet.css" text="Compress" AnchorPane.bottomAnchor="138.99999999999997" AnchorPane.topAnchor="419.0">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="423.0" layoutY="365.0" prefHeight="26.0" prefWidth="274.0" text="Please choose the file location" AnchorPane.rightAnchor="396.0" AnchorPane.topAnchor="363.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="compressResultLabel" layoutX="421.0" layoutY="489.0" prefHeight="26.0" prefWidth="264.0" text="Browse folder can't be empty" textFill="RED" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="419.0" AnchorPane.rightAnchor="406.20000000000005" AnchorPane.topAnchor="489.0">
+               <font>
+                  <Font name="Yu Gothic Bold" size="15.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" layoutX="208.0" layoutY="321.0" prefHeight="40.0" prefWidth="722.0" AnchorPane.bottomAnchor="247.39999999999998" AnchorPane.leftAnchor="208.0" AnchorPane.rightAnchor="158.80000000000007" AnchorPane.topAnchor="321.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Browse folder">
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </Text>
+                  <JFXTextField fx:id="browseField" editable="false" focusColor="#e3e3e3" prefHeight="26.0" prefWidth="416.0" styleClass="browseFolderStyle" stylesheets="@../assests/stylesheets/CompressBoxStylesheet.css" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow color="#dddddd" />
+                     </effect>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <ImageView fx:id="browseButton" fitHeight="50.0" fitWidth="40.0" onMouseClicked="#clickOnBrowseIcon" onMouseEntered="#mouseEnterToBrowseIcon" onMouseExited="#mouseExitToBrowseIcon" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/photos/browse.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+         <effect>
+            <DropShadow color="#e3e3e3" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane fx:id="adduserPane" layoutX="209.0" layoutY="119.0" prefHeight="610.0" prefWidth="1090.0" styleClass="addUserPaneStyle" stylesheets="@../assests/stylesheets/mainViewStyleSheet.css" visible="false">
+         <children>
+            <Text layoutX="49.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add User">
+               <font>
+                  <Font name="Ebrima Bold" size="36.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.32222224341498484" centerY="0.48091603053435117" radius="0.6308411304081711">
+                     <stops>
+                        <Stop color="#fb00ff" />
+                        <Stop color="#fb00ff" offset="0.007633587786259542" />
+                        <Stop color="#001aff" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <JFXTextField fx:id="adduserUsername" alignment="CENTER" layoutX="386.0" layoutY="161.0" onKeyPressed="#keyPressOnAddUserFields" prefHeight="47.0" prefWidth="321.0" promptText="Username" styleClass="addUserFieldStyles" stylesheets="@../assests/stylesheets/mainViewStyleSheet.css">
+               <font>
+                  <Font name="Ebrima" size="18.0" />
+               </font>
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#006bff" />
+                        <Stop color="#006bff" offset="0.007633587786259542" />
+                        <Stop color="#ff00f7" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#fb00ff" />
+                        <Stop color="#fb00ff" offset="0.007633587786259542" />
+                        <Stop color="#001aff" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+            </JFXTextField>
+            <JFXPasswordField fx:id="adduserPassword1" alignment="CENTER" layoutX="386.0" layoutY="233.0" onKeyPressed="#keyPressOnAddUserFields" prefHeight="47.0" prefWidth="321.0" promptText="Password" styleClass="addUserFieldStyles">
+               <font>
+                  <Font name="Ebrima" size="18.0" />
+               </font>
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#fb00ff" />
+                        <Stop color="#fb00ff" offset="0.007633587786259542" />
+                        <Stop color="#001aff" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#006bff" />
+                        <Stop color="#006bff" offset="0.007633587786259542" />
+                        <Stop color="#ff00f7" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+            </JFXPasswordField>
+            <JFXPasswordField fx:id="adduserPassword2" alignment="CENTER" layoutX="386.0" layoutY="301.0" onKeyPressed="#keyPressOnAddUserFields" prefHeight="47.0" prefWidth="321.0" promptText="Password" styleClass="addUserFieldStyles">
+               <font>
+                  <Font name="Ebrima" size="18.0" />
+               </font>
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#fb00ff" />
+                        <Stop color="#fb00ff" offset="0.007633587786259542" />
+                        <Stop color="#001aff" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#006bff" />
+                        <Stop color="#006bff" offset="0.007633587786259542" />
+                        <Stop color="#ff00f7" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+            </JFXPasswordField>
+            <JFXButton layoutX="384.0" layoutY="383.0" onMouseClicked="#clickOnAddUserButton" prefHeight="47.0" prefWidth="321.0" styleClass="addUserButtonStyle" stylesheets="@../assests/stylesheets/mainViewStyleSheet.css" text="ADD USER" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="adduserResultStatus" alignment="CENTER" layoutX="385.0" layoutY="451.0" prefHeight="18.0" prefWidth="322.0" text="Password do not match" textAlignment="CENTER" textFill="RED" visible="false" wrapText="true">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="removeuserPane" layoutX="213.0" layoutY="113.0" prefHeight="610.0" prefWidth="1090.0" styleClass="addUserPaneStyle" visible="false">
+         <children>
+            <Text layoutX="46.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove User">
+               <font>
+                  <Font name="Ebrima Bold" size="36.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5114503889593459" radius="0.7336448598130841">
+                     <stops>
+                        <Stop color="#3c00ff" />
+                        <Stop color="#3c00ff" offset="0.007633587786259542" />
+                        <Stop color="#ff00d4" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <JFXTextField fx:id="removeuserUsername" alignment="CENTER" layoutX="384.0" layoutY="210.0" onKeyPressed="#keyPressOnRemoveUserFields" prefHeight="47.0" prefWidth="321.0" promptText="Username" styleClass="addUserFieldStyles" stylesheets="@../assests/stylesheets/mainViewStyleSheet.css">
+               <font>
+                  <Font name="Ebrima" size="18.0" />
+               </font>
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#006bff" />
+                        <Stop color="#006bff" offset="0.007633587786259542" />
+                        <Stop color="#ff00fb" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#fb00ff" />
+                        <Stop color="#fb00ff" offset="0.007633587786259542" />
+                        <Stop color="#3c00ff" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+            </JFXTextField>
+            <JFXPasswordField fx:id="removeuserPassword" alignment="CENTER" layoutX="384.0" layoutY="275.0" onKeyPressed="#keyPressOnRemoveUserFields" prefHeight="47.0" prefWidth="321.0" promptText="Password" styleClass="addUserFieldStyles">
+               <font>
+                  <Font name="Ebrima" size="18.0" />
+               </font>
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#fb00ff" />
+                        <Stop color="#fb00ff" offset="0.007633587786259542" />
+                        <Stop color="#001aff" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#006bff" />
+                        <Stop color="#006bff" offset="0.007633587786259542" />
+                        <Stop color="#ff00f7" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+            </JFXPasswordField>
+            <JFXButton layoutX="384.0" layoutY="352.0" onMouseClicked="#clickOnRemoveUserButton" prefHeight="47.0" prefWidth="321.0" styleClass="addUserButtonStyle" stylesheets="@../assests/stylesheets/mainViewStyleSheet.css" text="ADD USER" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="removeuserResultStatus" alignment="CENTER" layoutX="383.0" layoutY="412.0" prefHeight="18.0" prefWidth="322.0" text="Password do not match" textAlignment="CENTER" textFill="RED" visible="false" wrapText="true">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="changeuserinfoPane" layoutX="200.0" layoutY="119.0" prefHeight="610.0" prefWidth="1090.0" styleClass="addUserPaneStyle" visible="false">
+         <children>
+            <GridPane hgap="50.0" layoutX="146.0" layoutY="138.0" prefHeight="75.0" prefWidth="792.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox fx:id="box2" alignment="CENTER_LEFT" onMouseClicked="#clickOnBoxes" onMouseEntered="#mouseEnterOnBoxes" onMouseExited="#mouseExitOnBoxes" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <styleClass>
+                        <String fx:value="box2" />
+                        <String fx:value="boxes" />
+                     </styleClass>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="50.0" styleClass="boxImage">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assests/photos/changepassword.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="74.0" prefWidth="304.0">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Password">
+                                 <font>
+                                    <Font name="Ebrima Bold" size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Please make sure that your password is correct." wrappingWidth="250.0">
+                                 <font>
+                                    <Font name="Ebrima" size="13.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="box1" alignment="CENTER_LEFT" onMouseClicked="#clickOnBoxes" onMouseEntered="#mouseEnterOnBoxes" onMouseExited="#mouseExitOnBoxes" prefHeight="100.0" prefWidth="200.0">
+                     <styleClass>
+                        <String fx:value="box1" />
+                        <String fx:value="boxes" />
+                     </styleClass>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="50.0" styleClass="boxImage">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assests/photos/changeusername.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="74.0" prefWidth="304.0" spacing="5.0">
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Username">
+                                 <font>
+                                    <Font name="Ebrima Bold" size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="20.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please make sure that your username is exists on our database." wrappingWidth="250.0">
+                                 <font>
+                                    <Font name="Ebrima" size="13.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+            <Text layoutX="53.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change User Info">
+               <font>
+                  <Font name="Ebrima Bold" size="36.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5114503889593459" radius="0.7336448598130841">
+                     <stops>
+                        <Stop color="#3c00ff" />
+                        <Stop color="#3c00ff" offset="0.007633587786259542" />
+                        <Stop color="#ff00d4" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <AnchorPane layoutX="148.0" layoutY="239.0" prefHeight="330.0" prefWidth="793.0">
+               <styleClass>
+                  <String fx:value="box3" />
+                  <String fx:value="boxes" />
+               </styleClass>
+               <children>
+                  <Text fill="WHITE" layoutX="18.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change User Info">
+                     <font>
+                        <Font name="Ebrima Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="userinfoOldUsername" alignment="CENTER" disable="true" focusColor="WHITE" layoutX="277.0" layoutY="40.0" onKeyPressed="#keyPressOnUserInfoFields" prefHeight="26.0" prefWidth="246.0" promptText="Old Username" styleClass="userinfoFields" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="userinfoNewUsername" alignment="CENTER" disable="true" focusColor="WHITE" layoutX="277.0" layoutY="90.0" onKeyPressed="#keyPressOnUserInfoFields" prefHeight="26.0" prefWidth="246.0" promptText="New Username" styleClass="userinfoFields" unFocusColor="WHITE" />
+                  <JFXPasswordField fx:id="userinfoOldPassword" alignment="CENTER" disable="true" focusColor="WHITE" layoutX="279.0" layoutY="140.0" onKeyPressed="#keyPressOnUserInfoFields" prefHeight="26.0" prefWidth="246.0" promptText="Old Password" styleClass="userinfoFields" unFocusColor="WHITE" />
+                  <JFXPasswordField fx:id="userinfoNewPassword" alignment="CENTER" disable="true" focusColor="WHITE" layoutX="277.0" layoutY="190.0" onKeyPressed="#keyPressOnUserInfoFields" prefHeight="26.0" prefWidth="246.0" promptText="New Password" styleClass="userinfoFields" unFocusColor="WHITE" />
+                  <JFXButton fx:id="changeinfoButton" disable="true" layoutX="277.0" layoutY="240.0" onMouseClicked="#clickOnChangeInfoButton" prefHeight="35.0" prefWidth="246.0" styleClass="changeInfoButton" text="Change Info" textFill="WHITE">
+                     <font>
+                        <Font name="Ebrima Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="userinfoResultStatus" alignment="CENTER" layoutX="276.0" layoutY="291.0" prefHeight="18.0" prefWidth="246.0" text="Failed to change user info" textAlignment="CENTER" textFill="#ffff00" visible="false">
+                     <font>
+                        <Font name="Ebrima Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

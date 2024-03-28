@@ -1,0 +1,36 @@
+.compressBox {
+    -fx-border-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-border-color: linear-gradient(to bottom left,#006BFF,#FF00F7);
+}
+
+.compressBoxTitleStyle {
+    -fx-text-fill: linear-gradient(to bottom left,#006BFF,#FF00F7);
+}
+
+.input-line {
+    -fx-pref-height: 0;
+    -fx-background-color: white;
+}
+.button:focused {
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.passwordBox {
+    -fx-border-radius: 20px;
+    -fx-border-color: linear-gradient(to bottom left,#006BFF,#FF00F7);
+    -fx-border-width: 2;
+    -fx-padding: 10;
+}
+
+.browseFolderStyle {
+    -fx-background-color: white;
+}
+
+.compressButtonStyle {
+    -fx-border-color: linear-gradient(to bottom left,#006BFF,#FF00F7);
+    -fx-text-fill: linear-gradient(to bottom left,#006BFF,#FF00F7);
+    -fx-border-radius: 25px;
+    -fx-border-width: 2px;
+}
